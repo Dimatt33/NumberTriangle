@@ -152,6 +152,10 @@ public class NumberTriangle {
             line = br.readLine();
         }
         br.close();
+        if (!rows.isEmpty()) {
+            top = rows.get(0).get(0);
+        }
+
         return top;
     }
 
